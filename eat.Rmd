@@ -35,7 +35,19 @@ mydata <- select(GSS,race,age,eatout)
 mydata <- na.omit(mydata)
 ```
 
+# Introduction
 
+# Methods
+
+# Results
+
+## Graphical Results
+
+## Numerical Results
+
+## Inferential Results
+
+# Conclusion and Discussion
 
 
 
