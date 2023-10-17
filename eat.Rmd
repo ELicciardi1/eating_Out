@@ -14,10 +14,6 @@ date: "`r Sys.Date()`"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## There were two years in which the General Social Survey asked about the frequency of eating out. The variable name you are looking for is "eatout".
-### Find those years and for the first year the question was asked download that years data in a stata format - its name will be "GSSxxxx.dta" where the xxxx is replaced by the year.  For example if the year was 1983 its name would be GSS1983.dta. Your assignment is to download the GSS yearly dataset for the first year the question was asked and then  write up the answer to the question by editing the  code block in line 31 to eval=TRUE and finish the job. 
-
-
 ```{r include=FALSE,echo=FALSE}
 source(file="fisherXY.R")
 require(tidyverse)
@@ -80,6 +76,8 @@ The result of the chi-squared test show that we have a chi-squared statistic far
 ```{r}
 fisherXY(mydata$race,mydata$eatout,printAll=TRUE,confL = 0.99)
 ```
+
+We see where that the critical p-value was located at the relation between the black and white race. We used show all the see all p-values associated with the combinations and this would indcate the only difference is located with "black" and "white" factors.
 
 # Conclusion and Discussion
 
